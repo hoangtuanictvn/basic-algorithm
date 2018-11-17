@@ -15,5 +15,5 @@ func main() {
 		}
 		array = append(array, i)
 	}
-	fmt.Print(sort.BubbleSort(array))
+	fmt.Print(sort.SelectSort(array))
 }
