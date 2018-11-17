@@ -1,10 +1,6 @@
-package bubble_sort
+package sort
 
-func swap(i *int, j *int) {
-	tmp := *i
-	*i = *j
-	*j = tmp
-}
+import utils "../utils"
 
 func BubbleSort(array []int) []int {
 	/*
@@ -14,7 +10,7 @@ func BubbleSort(array []int) []int {
 	for i := len(array); i > 2; i-- {
 		for j := 0; j < i-1; j++ {
 			if array[j] > array[j+1] {
-				swap(&array[j], &array[j+1])
+				utils.Swap(&array[j], &array[j+1])
 			}
 		}
 	}
